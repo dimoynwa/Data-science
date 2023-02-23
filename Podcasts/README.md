@@ -1,4 +1,4 @@
-<h1>Programatic scrape, save to AWS S3 and Transcribe podcast</h1>
+<h1>Podcasts-downloader.ipynb: Programatic scrape, save to AWS S3 and Transcribe podcast</h1>
 
 <p><b>You need to fill aws_credentials.json file with your AWS creadentials</b></p>
 
@@ -11,3 +11,8 @@
     <li>Trascribe podcasts using AWS Transcribe</li>
     <li>Save results to downloads folder</li>
 </ul>
+
+<h1>Trascribe-AssemblyAI.ipynb: Upload and Transcribe podcast using <b>Assembly AI</b></h1>
+
+<p><b>You need to fill assembly_ai_credentials.json file with your AssemblyAI creadentials</b></p>
+<p>For more info: https://www.assemblyai.com/app/</p>
