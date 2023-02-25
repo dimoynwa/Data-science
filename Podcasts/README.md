@@ -16,3 +16,11 @@
 
 <p><b>You need to fill assembly_ai_credentials.json file with your AssemblyAI creadentials</b></p>
 <p>For more info: https://www.assemblyai.com/app/</p>
+
+<h1>Using pyhon scripts to automatically download and transcribe mp3</h1>
+<h2>Scripts:</h2>
+<ul>
+    <li>download_podcasts.py - Download and save mp3 files to downloads folder. With possible command line args -limit(How many podcasts to download) and regex(for what regular expression to search in the podcast description)</li>
+    <li>assembly_ai_transcriber.py - Use Assembly AI to subscribe downloaded files from downloads folder. Possibe command line args -limit(How many seconds of the podcast ot be transcribed)</li>
+    <li>aws_transcriber.py - Use AWS Transcribe to subscribe downloaded files from downloads folder.</li>
+</ul>

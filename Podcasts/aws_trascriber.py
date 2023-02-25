@@ -76,7 +76,7 @@ class AwsTranscriber:
             self._bucket_name = credentials['aws_s3_bucket_name']
 
 if __name__ == '__main__':
-    aws_transcriber = AwsTranscriber('aws_credentials_dimo.json')
+    aws_transcriber = AwsTranscriber('aws_credentials.json')
     upload = aws_transcriber.upload_files()
     transcriptions = aws_transcriber.start_transcribe(upload)
     

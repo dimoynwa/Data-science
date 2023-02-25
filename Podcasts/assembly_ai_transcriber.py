@@ -1,6 +1,7 @@
 import json
 import requests
 import time
+import argparse
 from utils import mp3_files, save_to_pickle
 from download_podcasts import create_folder
 
@@ -89,7 +90,15 @@ class AssemblyAiTranscriber():
                 yield data
 
 if __name__ == '__main__':
-    assemblyAiTranscriber = AssemblyAiTranscriber('assembly_ai_credentials_dimo.json', time_limit=10)
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--limit", help="How many seconds of podcast to transcribe")
+    args=parser.parse_args()
+
+    limit = None
+    if args.limit:
+        limit = int(args.limit)
+    
+    assemblyAiTranscriber = AssemblyAiTranscriber('assembly_ai_credentials.json', time_limit=limit)
     
     transcriptions_folder = 'assembly_ai_transcriptions'
     create_folder(transcriptions_folder)
